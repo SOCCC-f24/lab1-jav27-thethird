@@ -14,5 +14,5 @@ if __name__ == "__main__":
 def f2c_raw(f): #IGNORE ME
     return f - 32 * 5 / 9
 def f2c_op(f):
-    return (f - 32) * (5 / 9) #TODO edit me
-    #adding parentheses around the multiplication as well as to prevent the 5 / 9 from being calculated first - TEST
+    return (f - 32) * 5 / 9 #TODO edit me
+    #removing parentheses around the division as to prevent the 5 / 9 from being calculated at all and for the calculation to go in order from left to right - TEST
