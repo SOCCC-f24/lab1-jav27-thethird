@@ -1,23 +1,11 @@
 """ Jud-Arsenio Verrier, CSC138 12/10/24"""
 
 import pytest
-from temp_converter import c2f
+from temp_converter import f2c_op
 
-def test_c2f_pass():
-    # Valid case for c2f
-    assert round(c2f(0), 2) == 32.0     # Freezing point of water
-
-def test_c2f_fail_case_1():
-    # Failing case for c2f
-    assert round(c2f(0), 2) == 32.0  # This should fail based on your function
-    # '32' edited to match the formula for celsius conversion
-
-def test_c2f_fail_case_2():
-    # Failing case for c2f
-    assert round(c2f(100), 2) == 212.0  # This should fail based on your function
-    # '212' edited to match the formula for celsius conversion
-
-def test_c2f_fail_case_3():
-    # Failing case for c2f
-    assert round(c2f(37.78), 2) == 100.0  # This should fail based on your function
-    # '100' edited to match the formula for celsius conversion
+def test_f2c_zero():
+    assert round(f2c_op(0), 2) == -17.78  # Freezing point 
+def test_f2c_five():
+    assert round(f2c_op(5), 2) == -15.00
+def test_f2c_negative_forty():
+    assert round(f2c_op(-40), 2) == -40.00  # Fah and Cell at -40
