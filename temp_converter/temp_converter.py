@@ -14,4 +14,5 @@ if __name__ == "__main__":
 def f2c_raw(f): #IGNORE ME
     return f - 32 * 5 / 9
 def f2c_op(f):
-    return f - 32 * 5 / 9 #TODO edit me
+    return f - 32 * (5 / 9) #TODO edit me
+    #adding parentheses around the division as it is associative rather than commutitive - TEST
